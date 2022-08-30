@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chapter4</title>
+    <style>
+        h1{
+            border: 7px; 
+            padding: 5%;
+           text-align:center ; 
+            background: blue;
+            color: white;
+        }
+        h4{
+            color: red;
+        }
+        table {
+            border: 2;
+            cellpading: 30px;
+            background: rgb (72,68,95);
+        }
+        th {
+            color: black;
+        }
+        dt{
+            color: brown;
+        }
+        h3{
+            color: black;
+        }
+        h2{s
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    <h1>INTRODUCTION TO OSI MODEL</h1>
+    <h4 style="color: red;">    OSI model:-</h4>
+    <ul>
+<li>OSI stands for Open System Interconnection is a reference model that describes how information from a software
+    application in one computer
+    moves through a physical medium to the software application in another computer.</li>
+<li>OSI consists of seven layers, and each layer performs a particular network function.</li>
+<li>OSI model was developed by the International Organization for Standardization (ISO) in 1984,
+     and it is now considered as an architectural model for the inter-computer communications.</li>
+<li>OSI model divides the whole task into seven smaller and manageable tasks. Each layer is assigned a particular task.</li>
+<li>Each layer is self-contained, so that task assigned to each layer can be performed independently.</li>
+    </ul>
+    
+
+<h4 >types of OSI model:-</h4>
+<table  border="4" cellspasing="" cellpading="30">
+<tr><th>Application Layer</th></tr>
+<tr><th>Presentation Layer</th></tr>
+<tr><th>Session layer</th></tr>
+<tr><th>Transport Layer</th></tr>
+<tr><th>Network Layer</th></tr>
+<tr><th>Data-Link Layer</th></tr>
+<tr><th>Physical Layer</th></tr>
+</table>
+<dl>
+<dt>Application Layer:-</dt>
+<dd>The application layer is used by end-user software such as web browsers and email clients. It provides protocols that 
+    allow software to send and receive information and present meaningful data to users. A few examples of application
+     layer protocols are the Hypertext Transfer Protocol (HTTP), File Transfer Protocol (FTP), Post Office Protocol (POP), 
+     Simple Mail Transfer Protocol (SMTP), and Domain Name System (DNS).</dd>
+
+     <img src="https://www.tutorialspoint.com/data_communication_computer_network/images/application_layer.jpg" alt="" >
+     <dt>Presentation Layer:-</dt>
+     <dd>The presentation layer prepares data for the application layer. It defines how two devices should encode, encrypt,
+         and compress data so it is received correctly on the other end. The presentation layer takes any data transmitted
+          by the application layer and prepares it for transmission over the session layer.</dd>
+          <img src="https://i0.wp.com/networkwalks.com/wp-content/uploads/2020/10/osi-model-presentation-layer-6_2.png?resize=895%2C612&ssl=1" alt="" width="470" >
+          <dt>Session layer:-</dt>
+          <dd>The session layer creates communication channels, called sessions, between devices. It is responsible for
+             opening sessions, ensuring they remain open and functional while data is being transferred, and closing them when
+              communication ends. The session layer can also set checkpoints during a data transfer—if the session is interrupted,
+               devices can resume data transfer from the last checkpoint.</dd>
+               <img src="http://fiberbit.com.tw/wp-content/uploads/2013/06/session-layer-in-OSI-networking-model.jpg" alt="" width="470" >
+               <dt>Transport Layer:-</dt>
+               <dd>The transport layer takes data transferred in the session layer and breaks it into “segments” on the transmitting end. 
+                It is responsible for reassembling the segments on the receiving end, turning it back into data that can be used by the 
+                session layer. The transport layer carries out flow control, sending data at a rate that matches the connection speed 
+                of the receiving device, and error control, checking if data was received incorrectly and if not, requesting it again.</dd>
+                <img src="http://fiberbit.com.tw/wp-content/uploads/2013/06/transport-layer-in-osi-networking-model-system.jpg" alt="" >
+<dt>Network Layer:-</dt> 
+<dd>The network layer has two main functions. One is breaking up segments into network packets, and reassembling the packets on the
+     receiving end. The other is routing packets by discovering the best path across a physical network. The network layer uses 
+     network addresses (typically Internet Protocol addresses) to route packets to a destination node.</dd>
+     <img src="https://cdn.ttgtmedia.com/rms/onlineimages/networking-osi_model_network_layer-h_half_column_mobile.png" alt="" width="470" >
+     <dt>Data-Link Layer:-</dt    
+     <dd>The data link layer establishes and terminates a connection between two physically-connected nodes on a network.
+         It breaks up packets into frames and sends them from source to destination. This layer is composed of 
+         two parts—Logical Link Control (LLC), which identifies network protocols, performs error checking and
+          synchronizes frames, and Media Access Control (MAC) which uses MAC addresses to connect devices and
+           define permissions to transmit and receive data.</dd>dd>  
+           <img src="https://cdn.ttgtmedia.com/rms/onlineimages/networking-osi_layers_data_link_mobile.png" alt="" >      
+           <dt>Physical Layer:-</dt> 
+           <dd>The physical layer is responsible for the physical cable or wireless connection between network nodes.
+             It defines the connector, the electrical cable or wireless technology connecting the devices, and is 
+             responsible for transmission of the raw data, which is simply a series of 0s and 1s, while taking care 
+             of bit rate control.</dd>  
+             <img src="http://fiberbit.com.tw/wp-content/uploads/2013/07/physical-layer-in-osi-model.png" alt="" >
+             <h3>Advantages of OSI Model:-</h3>
+             <h4>The OSI model helps users and operators of computer networks:</h4>
+             <ul>
+                <li>Determine the required hardware and software to build their network.</li>
+                <li>Understand and communicate the process followed by components communicating across a network</li>
+                <li>Perform troubleshooting, by identifying which network layer is causing an issue and focusing efforts on that layer.</li>
+             </ul>
+<h4>The OSI model helps network device manufacturers and networking software vendors:</h4>
+             <ul>
+                <li>Create devices and software that can communicate with products from any other vendor, allowing open interoperability</li>
+                <li>Define which parts of the network their products should work with.</li>
+                <li>Communicate to users at which network layers their product operates – for example,
+                     only at the application layer, or across the stack.</li>
+             </ul>
+</dl>
+<h2>Ethernet:-</h2>
+<ul>
+    <li>Ethernet is the traditional technology for connecting devices in a wired local area network (LAN) or wide area network (WAN). 
+        It enables devices to communicate with each other via a protocol, which is a set of rules or common network language.</li>
+    <li>Ethernet describes how network devices format and transmit data so other devices on the same LAN or campus
+         network can recognize, receive and process the information. An Ethernet cable is the physical,
+          encased wiring over which the data travels.</li>
+    <li>Connected devices that use cables to access a geographically localized network -- instead of 
+        a wireless connection -- likely use Ethernet. From businesses to gamers, diverse end users rely
+         on the benefits of Ethernet connectivity, which include reliability and security.</li>
+    <li>Compared to wireless LAN (WLAN) technology, Ethernet is typically less vulnerable to disruptions.
+         It can also offer a greater degree of network security and control than wireless technology because 
+         devices must connect using physical cabling. This makes it difficult for outsiders to access network 
+         data or hijack bandwidth for unsanctioned devices.</li>
+</ul>
+ <table border="4  " cellpading:50; text align="center"  cellspasing:0;>
+<tr>
+    <th colspan="2" align="center">Two types of Ethernet</th>
+</tr>
+<tr>
+    <td>Baseband Transmission</td>
+    <td>Broadband Transmission</td>
+</tr>
+<tr>
+    <td>Low pass:-Digital</td>
+    <td>Band pass:-Analog</td>
+</tr>
+<tr>
+    <td>Manchester Encoding</td>
+    <td>Psk Encoding</td>
+</tr>
+
+
+</table>
+<h3><a href="./chapter3.html">Previous page</a></h3>
+</body>
+</html>

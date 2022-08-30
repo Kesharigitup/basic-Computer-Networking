@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter2</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        /* padding-right: 7%;
+        padding-left: 7%; */
+        margin: 0px;
+        background-color: rgba(173, 136, 88, 0.381);
+        border: 0.3rem solid;
+    }
+
+    table,
+    th,
+    tr,
+    td {
+        border: 1px solid black;
+        padding: 4px;
+        align-items:center;
+    }
+
+    h1 {
+        padding: 50px;
+        text-align: center;
+        background: rgb(17 143 158);
+    }
+
+    h6  {
+        text-align: right;
+        text-decoration: dotted;
+    }
+.content{
+padding: 8%;
+padding-top: 0%;
+font-size: larger;
+font-family: cursive;
+}
+.content dl dt{
+color: red;
+}
+</style>
+<body>
+    <h1>INTRODUCTION TO TOPOLOGY</h1>
+    <dl>
+        <dt style="color:red ;">What is topology?</dt>
+        <dd>The arrangement of network that comparies nodes and connection lines via sender and receiver is referred to as network topology. 
+                                      In the other word ,the pictorial represent of computer network is called network topology.         
+        </dd>
+    
+    <h4>types of topology:-</h4>
+         <ol>
+            <li>Mesh topology</li>
+            <li>Ring topology</li>
+            <li>Star topology</li>
+            <li> Bus topology</li>
+            <li>Tree topology</li>
+            <li>Hybrid  topology</li>
+         </ol>
+         
+            <dt style="color: blue;">1.Mesh topology </dt>
+            <dd>A mesh topology is a network setup where each computer and network device is interconnected with one another. 
+                This topology setup allows for most transmissions to be distributed even if one of the connections goes down.
+                 It is a topology commonly used for wireless networks. Below is a visual example of a simple computer setup on
+                  a network using a mesh topology.
+            </dd>
+            <h4>Advantage:-</h4>
+            <ul>
+                <li>Each connection can carry its own data load  </li>
+                <li>It is robust </li>
+                <li>Fault is diagnosed easily</li>
+                <li>Provides security and privacy</li>
+            </ul>
+            <h4>Disadvantage:-</h4>
+            <ul>
+                <li>Installation and configuration is difficult</li>
+                <li>Cabling cost is more</li>
+                <li> Bulk wiring is required</li>
+            </ul>
+            <img src="https://www.computerhope.com/jargon/m/mesh.gif" alt="image">
+<dt style="color:blue ;">2.Ring topology:-</dt>
+<dd>A ring topology is a network configuration where device connections create a circular data path.
+     Each networked device is connected to two others, like points on a circle. Together, devices in
+      a ring topology are referred to as a ring network.A ring topology is a network configuration where 
+      device connections create a circular data path. Each networked device is connected to two others, like points on a circle.
+       Together, devices in a ring topology are referred to as a ring network.</dd>
+       <h4>Advantage:-</h4>
+       <ul>
+        <li>The possibility of collision minimum in this type of topology</li>
+        <li>Cheap to install and expand</li>
+        
+       </ul>
+       <h4>Disadvantage:-</h4>
+       <ul>
+        <li>troubleshooting is difficult in this topology</li>
+        <li>The addition of stations in b/w or removel of station can disturb the whole topology</li>
+        <li>Less secure</li>
+       </ul>
+       <img src="https://www.computerhope.com/jargon/r/ring.gif " alt="image" text-align="center" >
+       <dt style="color:blue ;">3.star topology:-</dt>
+<dd>Star topology is a network topology in which each network component is physically connected to a
+     central node such as a router, hub or switch.
+                       In a star topology, the central hub acts like a server and the connecting nodes act like clients.
+      When the central node receives a packet from a connecting node, it can pass the packet on to other 
+      nodes in the network. A star topology is also known as a star network.</dd>
+      <h4>Advantage:-</h4>
+      <ul>
+        <li>Less expensive because each device only need one I/O port and wishes to be connected with hub with one link.</li>
+        <li>Easy fault detection because the link are often easily identified.</li>
+        <li>No disruptions to the network when connecting or removing devices.</li>
+        <li>It is high-performing as no data collisions can occur</li>
+      </ul>
+      <h4>Disadvantage:-</h4>
+      <ul>
+        
+        <li>Requires more cable than a linear bus</li>
+        <li>More expensive than linear bus topology due to the value of the connecting devices (network switches)</li>
+        <li>Hub requires more resources and regular maintenance because it’s the central system of star .</li>
+        <li>Extra hardware is required (hubs or switches) which adds to cost</li>
+      </ul>
+      <img src="https://www.dnsstuff.com/wp-content/uploads/2019/09/Star-Topology-1024x536.jpg" alt="image" width="340">
+      <dt style="color: blue;">4.Bus topology:-</dt>
+      <dd>Bus topology is a specific kind of network topology in which all of the various devices in the network are connected
+         to a single cable or line. In general, the term refers to how various devices are set up in a network.</dd>
+         <h4>Advantage:-</h4>
+         <ul>
+        <li>It works very efficiently well when there is a small network.</li>
+        <li>The length of cable required is less than a star topology.</li>
+        <li>It is easy to connect or remove devices in this network without affecting any other device.</li>
+        <li>Easy to expand by joining the two cables together.</li>
+        <li>It is easy to understand topology.</li>
+     </ul>
+
+
+
+         <h4>Disadvantage:-</h4>
+         <ul>
+           
+           <li>Bus topology is not great for large networks.</li>
+           <li>Identification of problems becomes difficult if the whole network goes down</li>
+           <li>Need terminators are required at both ends of the main cable</li>
+           <li>This network topology is very slow as compared to other topologies.</li>
+         </ul>
+                   <img src="https://www.dnsstuff.com/wp-content/uploads/2019/09/Bus-Topology-1024x536.jpg" alt="image" width="360">   
+<dt style="color: blue;">5.Tree topology:-</dt>
+<dd>A tree topology is a type of network topology that includes at least three specific levels in a topology hierarchy.
+     Tree topologies are valued for their scalability and accessibility for troubleshooting.</dd>
+     <h4>Advantage:-</h4>
+     <ul>
+    <li>The other nodes in a network are not affected if one of their nodes gets damaged or does not work.</li>
+    <li>Tree topology provides easy maintenance and easy fault identification can be done.</li>
+    <li>A callable topology. Leaf nodes can hold more nodes.</li>
+    <li>This topology is the combination of bus and star topology.</li>
+    <li>Tree Topology is reliable.</li>
+ </ul>
+
+
+
+     <h4>Disadvantage:-</h4>
+     <ul>
+       
+       <li>This network is very difficult to configure as compared to the other network topologies.</li>
+       <li>Treatment of the topology is pretty complex.</li>
+       <li>Requires a large number of cables compared to star and ring topology.</li>
+       <li>The length of a segment is limited & the limit of the segment depends on the type of cabling used.</li>
+     </ul>
+     <img src="https://static.javatpoint.com/computer/images/what-is-tree-topology2.png" alt="">
+     <dt style="color: blue;">6.Hybrid topology:-</dt>
+     <dd>A hybrid topology is a type of network topology that uses two or more differing network topologies. 
+        These topologies can include a mix of bus topology, mesh topology, ring topology, star topology, and tree topology.</dd>
+        <h4>Advantage:-</h4>
+        <ul>
+       <li>It is extremely flexible.</li>
+       <li>It is very reliable.</li>
+       <li>It is easily scalable as Hybrid networks are built in a fashion which
+         enables easy integration of new hardware components.</li>
+       <li>Error detecting and troubleshooting are easy.</li>
+       <li>The speed of the topology becomes fast when two topologies are put together.</li>
+       <li>It is used to create large networks.</li>
+    </ul>
+
+
+
+        <h4>Disadvantage:-</h4>
+        <ul>
+          
+          <li>It is a type of network expensive.</li>
+          <li>The design of a hybrid network is very complex.</li>
+          <li>There is a change in the hardware to connect one topology with another topology.</li>
+          <li>Installation is a difficult process.</li>
+        </ul>
+        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgsH25d45JD1-iQ66HIi9VgR4X83-6mAUn9HtUujgvwV8BUnmkiST3pxAQ0Gv9FvGYpWdAHHnIiI3-Bs6w0BtQQ2LhWca-knj5aioks1nYppZ-nr2AYB-84Ia2JH-GXLTKTyfSh2KHBV8Q1JFy57Wu9x95eigddWinGlx3wIhJo24R5Gre9TK7shH5ZaA=w640-h378" alt="">
+         </dl>
+         <h3 style="text-align:left ;"><a href="./chapter1.html">Previous page</a></h3>
+         <h3 style="text-align:right ;"><a href="./chapter3.html">Next page</a></h3>
+</body>
+</html>
